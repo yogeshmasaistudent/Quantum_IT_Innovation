@@ -16,13 +16,16 @@ const User = () => {
       }
 
       try {
-        const response = await fetch("http://localhost:3030/users", {
-          method: "GET",
-          headers: {
-            Authorization: `Bearer ${token}`,
-            "Content-Type": "application/json",
-          },
-        });
+        const response = await fetch(
+          "https://quantum-it-innovation-1.onrender.com/users",
+          {
+            method: "GET",
+            headers: {
+              Authorization: `Bearer ${token}`,
+              "Content-Type": "application/json",
+            },
+          }
+        );
 
         if (!response.ok) {
           throw new Error("Failed to fetch users.");

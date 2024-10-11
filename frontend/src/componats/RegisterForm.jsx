@@ -19,12 +19,15 @@ const RegisterForm = () => {
     setError(""); 
 
     try {
-      const response = await axios.post("http://localhost:3030/register", {
-        name,
-        dateOfBirth,
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://quantum-it-innovation-1.onrender.com/register",
+        {
+          name,
+          dateOfBirth,
+          email,
+          password,
+        }
+      );
 
       console.log("Registration successful", response.data);
       setLoading(false); 

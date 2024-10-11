@@ -13,13 +13,16 @@ const LoginForm = ({ handleLogin }) => {
     console.log("Login submitted", { email, password });
 
     try {
-      const response = await fetch("http://localhost:3030/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
+      const response = await fetch(
+        "https://quantum-it-innovation-1.onrender.com/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ email, password }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Login failed. Please check your credentials.");

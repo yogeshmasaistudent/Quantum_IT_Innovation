@@ -39,7 +39,7 @@ This project implements a robust login and registration system using **React** f
 - **Frontend Application**: [Frontend Live Link](https://quantum-it-innovation-gold.vercel.app/login)
 - **Backend API**: [Backend Live API](https://quantum-it-innovation-1.onrender.com)
 
-*(Replace `<your-frontend-live-link>` and `<your-backend-live-api>` with the actual URLs.)*
+
 
 ## Installation
 
